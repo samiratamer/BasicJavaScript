@@ -1,4 +1,4 @@
-// -------------------- COUNTER --------------------
+// COUNTER 
 let counter = 0;
 
 function updateDisplay() {
@@ -15,7 +15,7 @@ function tickDown() {
     updateDisplay();
 }
 
-// -------------------- FOR LOOP --------------------
+// FOR LOOP
 function runForLoop() {
     let currentValue = parseInt(document.getElementById("counter").textContent);
     let result = "";
@@ -27,7 +27,7 @@ function runForLoop() {
     document.getElementById("forLoopResult").textContent = result;
 }
 
-// -------------------- ODD NUMBERS --------------------
+// ODD NUMBERS 
 function showOddNumbers() {
     let currentValue = parseInt(document.getElementById("counter").textContent);
     let result = "";
@@ -41,7 +41,7 @@ function showOddNumbers() {
     document.getElementById("oddNumberResult").textContent = result;
 }
 
-// -------------------- ARRAYS --------------------
+// ARRAYS
 function addMultiplesToArray() {
 
     let currentValue = parseInt(document.getElementById("counter").textContent);
@@ -56,7 +56,7 @@ function addMultiplesToArray() {
     console.log(multiples);
 }
 
-// -------------------- PRINT CAR OBJECT --------------------
+// PRINT CAR OBJECT
 function printCarObject() {
 
     let type = document.getElementById("carType").value;
@@ -72,7 +72,7 @@ function printCarObject() {
     console.log(car);
 }
 
-// -------------------- LOAD CAR OBJECT --------------------
+// LOAD CAR OBJECT
 function loadCar(num) {
 
     let car;
@@ -90,7 +90,7 @@ function loadCar(num) {
     document.getElementById("carColor").value = car.cColor;
 }
 
-// -------------------- CHANGE STYLE --------------------
+// CHANGE STYLE 
 function changeColor(num) {
 
     let paragraph = document.getElementById("styleParagraph");

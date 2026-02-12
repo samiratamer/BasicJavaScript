@@ -1,4 +1,4 @@
-// ---------- COUNTER ----------
+// -------------------- COUNTER --------------------
 let counter = 0;
 
 function updateDisplay() {
@@ -15,22 +15,24 @@ function tickDown() {
     updateDisplay();
 }
 
-// ---------- FOR LOOP ----------
+// -------------------- FOR LOOP --------------------
 function runForLoop() {
+    let currentValue = parseInt(document.getElementById("counter").textContent);
     let result = "";
 
-    for (let i = 0; i <= counter; i++) {
+    for (let i = 0; i <= currentValue; i++) {
         result += i + " ";
     }
 
     document.getElementById("forLoopResult").textContent = result;
 }
 
-// ---------- ODD NUMBERS ----------
+// -------------------- ODD NUMBERS --------------------
 function showOddNumbers() {
+    let currentValue = parseInt(document.getElementById("counter").textContent);
     let result = "";
 
-    for (let i = 1; i <= counter; i++) {
+    for (let i = 1; i <= currentValue; i++) {
         if (i % 2 !== 0) {
             result += i + " ";
         }
@@ -39,11 +41,13 @@ function showOddNumbers() {
     document.getElementById("oddNumberResult").textContent = result;
 }
 
-// ---------- ARRAYS ----------
+// -------------------- ARRAYS --------------------
 function addMultiplesToArray() {
+
+    let currentValue = parseInt(document.getElementById("counter").textContent);
     let multiples = [];
 
-    for (let i = counter; i >= 5; i--) {
+    for (let i = currentValue; i >= 5; i--) {
         if (i % 5 === 0) {
             multiples.push(i);
         }
@@ -52,8 +56,9 @@ function addMultiplesToArray() {
     console.log(multiples);
 }
 
-// ---------- PRINT CAR OBJECT ----------
+// -------------------- PRINT CAR OBJECT --------------------
 function printCarObject() {
+
     let type = document.getElementById("carType").value;
     let mpg = document.getElementById("carMPG").value;
     let color = document.getElementById("carColor").value;
@@ -67,7 +72,7 @@ function printCarObject() {
     console.log(car);
 }
 
-// ---------- LOAD CAR OBJECTS ----------
+// -------------------- LOAD CAR OBJECT --------------------
 function loadCar(num) {
 
     let car;
@@ -85,7 +90,7 @@ function loadCar(num) {
     document.getElementById("carColor").value = car.cColor;
 }
 
-// ---------- CHANGE STYLE ----------
+// -------------------- CHANGE STYLE --------------------
 function changeColor(num) {
 
     let paragraph = document.getElementById("styleParagraph");
